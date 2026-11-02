@@ -44,7 +44,9 @@ XUEYANG SKILL 是一套专门应付这三句话的汇报方法，整理自地产
 **你要我支持什么？**
 需要领导拍板的事，写清楚卡在哪里、影响什么、要谁在什么时候给什么。没有就不写，也不凑数。
 
-完整的方法在 [SKILL.md](SKILL.md) 里：专项、复盘、周报、定价、招商等常用汇报的骨架，十几种页面的排法，行业里的说话习惯，还有一份用领导的眼光逐页预审的清单。
+上级要你把需要支持的问题报上来时，它会整理成一张表：同一个原因的合成一条，按轻重排好，每条写清卡在哪一方、要什么结果、哪天之前。几个人各报一版的，也能统成一份。
+
+完整的方法在 [SKILL.md](SKILL.md) 里：专项、复盘、周报、定价、招商、需支持事项清单等常用汇报的骨架，十几种页面的排法，行业里的说话习惯，还有一份用领导的眼光逐页预审的清单。
 
 ## 谁会用得上
 
@@ -54,7 +56,7 @@ XUEYANG SKILL 是一套专门应付这三句话的汇报方法，整理自地产
 
 以 Claude 为例：
 
-1. 下载 [xueyang-skill-v2.5.zip](https://github.com/HAOY3542/xueyang-skill/releases/download/v2.5/xueyang-skill-v2.5.zip)。
+1. 下载 [xueyang-skill-v2.6.zip](https://github.com/HAOY3542/xueyang-skill/releases/download/v2.6/xueyang-skill-v2.6.zip)。
 2. 在 Claude 里打开 **Customize > Skills**，点 **+** → **Create skill** → **Upload a skill**，把 ZIP 传上去。如果传不了，先到 Settings > Capabilities 里打开代码执行。
 3. 在对话里说一句"用 XUEYANG SKILL 改这份周报"，再把材料发给它。
 
@@ -67,14 +69,14 @@ XUEYANG SKILL 是一套专门应付这三句话的汇报方法，整理自地产
 
 ```bash
 mkdir -p ~/.claude/skills
-unzip xueyang-skill-v2.5.zip -d ~/.claude/skills/
+unzip xueyang-skill-v2.6.zip -d ~/.claude/skills/
 ```
 
 **Codex**，装好后在对话里用 `$xueyang-skill` 调用：
 
 ```bash
 mkdir -p ~/.agents/skills
-unzip xueyang-skill-v2.5.zip -d ~/.agents/skills/
+unzip xueyang-skill-v2.6.zip -d ~/.agents/skills/
 ```
 
 **直接克隆**
@@ -98,6 +100,8 @@ git clone https://github.com/HAOY3542/xueyang-skill ~/.claude/skills/xueyang-ski
 - 帮我搭一份商铺定价方案的框架，告诉我还缺哪些测算数据。
 - 只调这份 PPT 的排版，文字一个字都别动。
 - 下周要上会，帮我预审这份季度汇报，看看领导会在哪几页追问。
+- 大家各报了一版需支持事项，帮我汇总成一张表，同一个原因的合并，按轻重排好。
+- 这份非营问题清单帮我改一下，让平台一看就知道要拍什么板。
 
 ## 说明
 
